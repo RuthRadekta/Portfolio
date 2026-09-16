@@ -262,3 +262,105 @@ section {
         padding-top: 2rem;
     }
 }
+
+/*Other Buttons*/
+.btn-view-projects {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--color-4);
+    transition: color 0.2s ease;
+}
+
+.btn-view-projects:hover {
+    color: var(--color-2);
+}
+
+/* ------------------------------------- */
+/* STYLING HALAMAN ARSIP (projects.html) */
+/* ------------------------------------- */
+
+/* Tombol Kembali */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--accent-purple);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.back-link i {
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.back-link:hover {
+    color: var(--text-primary);
+}
+
+.back-link:hover i {
+    transform: translateX(-5px); /* Panah bergerak ke kiri saat di-hover */
+}
+
+/* Tabel Arsip Tanpa Border */
+.archive-table {
+    color: var(--text-secondary);
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.archive-table thead th {
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.archive-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.archive-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.03); /* Latar baris meredup ala Brittany Chiang */
+}
+
+/* Override background Bootstrap agar tetap transparan & rapi */
+.archive-table td, 
+.archive-table th {
+    background: transparent !important;
+    border: none !important; 
+    padding: 1.25rem 1rem;
+}
+
+.archive-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03) !important;
+}
+
+.year-col {
+    color: #FFFFFF;
+    font-family: monospace;
+    font-size: 0.95rem;
+}
+
+.project-name-col {
+    font-size: 1.1rem;
+}
+
+/* Ikon Tautan Tabel */
+.archive-link {
+    color: var(--text-secondary);
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.archive-table tbody tr:hover .archive-link {
+    color: var(--accent-purple);
+}
+
+.archive-link:hover {
+    color: var(--text-primary) !important;
+    transform: translateY(-2px) translateX(2px); /* Bergerak serong ke atas kanan */
+}
